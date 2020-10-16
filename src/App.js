@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import NewTask from './Presentational/NewTask';
+import TasksList from './Presentational/TasksList';
 
 function App() {
+
+  const [newTask, setNewTask] = useState({});
+  const handleChange = ({target}) => {
+    const {name, value} = target;
+    setNewTask((prevTask)=>({
+      ...prevTask,
+      id: Date.now(),
+      [name]: value
+    }));
+  };
+
+  const [allTasks, setAllTasks] = useState([]);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if(!newTask.title)return;
+    setAllTasks((prev) => [newTask, ...prev]);
+    setNewTask({});
+  };
+
+  const handleDelete = (taskIdToRemove) => {
+    setAllTasks((prev) => prev.filter(
+      task => task.id !== taskIdToRemove));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>TO DO APP</h1>
+      <h1>My tasks</h1>
+      <NewTask newTask={newTask}
+      handleChange={handleChange}
+      handleSubmit={handleSubmit} />
+      
+      <TasksList allTasks={allTasks}
+      handleDelete={handleDelete} />
     </div>
   );
 }
