@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chat-to-doo/static/css/main.43df5b8d.chunk.css",
+    "main.js": "/chat-to-doo/static/js/main.a63d83e8.chunk.js",
+    "main.js.map": "/chat-to-doo/static/js/main.a63d83e8.chunk.js.map",
+    "runtime-main.js": "/chat-to-doo/static/js/runtime-main.0bbff82f.js",
+    "runtime-main.js.map": "/chat-to-doo/static/js/runtime-main.0bbff82f.js.map",
+    "static/js/2.f1d4f1ff.chunk.js": "/chat-to-doo/static/js/2.f1d4f1ff.chunk.js",
+    "static/js/2.f1d4f1ff.chunk.js.map": "/chat-to-doo/static/js/2.f1d4f1ff.chunk.js.map",
+    "index.html": "/chat-to-doo/index.html",
+    "precache-manifest.6abf38ff7e336033583ff9be35841ce1.js": "/chat-to-doo/precache-manifest.6abf38ff7e336033583ff9be35841ce1.js",
+    "service-worker.js": "/chat-to-doo/service-worker.js",
+    "static/css/main.43df5b8d.chunk.css.map": "/chat-to-doo/static/css/main.43df5b8d.chunk.css.map",
+    "static/js/2.f1d4f1ff.chunk.js.LICENSE.txt": "/chat-to-doo/static/js/2.f1d4f1ff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bbff82f.js",
+    "static/js/2.f1d4f1ff.chunk.js",
+    "static/css/main.43df5b8d.chunk.css",
+    "static/js/main.a63d83e8.chunk.js"
+  ]
+}
