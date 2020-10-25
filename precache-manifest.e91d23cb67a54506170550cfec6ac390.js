@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8091fe906647e937804d3360bf460b8e",
+    "revision": "603f128bab5de03182b720561b8edf96",
     "url": "/chat-to-doo/index.html"
   },
   {
-    "revision": "d00ff4a4c3b19e07eed0",
-    "url": "/chat-to-doo/static/css/main.43df5b8d.chunk.css"
+    "revision": "6dc7dcfdb8a74059b020",
+    "url": "/chat-to-doo/static/css/main.013fe249.chunk.css"
   },
   {
     "revision": "994a66dfe9f7339c3466",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chat-to-doo/static/js/2.f1d4f1ff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d00ff4a4c3b19e07eed0",
-    "url": "/chat-to-doo/static/js/main.a63d83e8.chunk.js"
+    "revision": "6dc7dcfdb8a74059b020",
+    "url": "/chat-to-doo/static/js/main.6077bd91.chunk.js"
   },
   {
     "revision": "a784de6fa354cf9df3a8",

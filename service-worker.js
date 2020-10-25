@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chat-to-doo/precache-manifest.6abf38ff7e336033583ff9be35841ce1.js"
+  "/chat-to-doo/precache-manifest.e91d23cb67a54506170550cfec6ac390.js"
 );
 
 self.addEventListener('message', (event) => {
