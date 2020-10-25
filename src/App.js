@@ -3,9 +3,11 @@ import './App.css';
 import NewTask from './Presentational/NewTask';
 import TasksList from './Presentational/TasksList';
 
+
 function App() {
 
   const [newTask, setNewTask] = useState({});
+
   const handleChange = ({target}) => {
     const {name, value} = target;
     setNewTask((prevTask)=>({
@@ -14,6 +16,7 @@ function App() {
       [name]: value
     }));
   };
+ 
 
   const [allTasks, setAllTasks] = useState([]);
   const handleSubmit = (event) => {
@@ -28,6 +31,28 @@ function App() {
       task => task.id !== taskIdToRemove));
   };
 
+  
+  // const handleDone = () => {
+  //   document.getElementById('idTitle').style.cssText=
+  //   'text-decoration: line-through; background-color:  #aaff80;'
+  // }
+     
+// const handleDone = () => {
+  // document.getElementByClassName('toDoTitle').classList.add('done')
+// }
+
+  // const handleDone = (index) => {
+  //   const newTasks = [...allTasks];
+  //   newTasks[index].isCompleted = true;
+  //   setAllTasks(newTasks);
+  // }
+  const handleDone = (index) => {
+    document.getElementsByClassName("toDoTitle")[index].style.cssText=
+  'text-decoration: line-through; background-color:  #aaff80;'
+  }
+
+
+
   return (
     <div className="App">
       <h1>TO DO APP</h1>
@@ -37,7 +62,10 @@ function App() {
       handleSubmit={handleSubmit} />
       
       <TasksList allTasks={allTasks}
-      handleDelete={handleDelete} />
+      setAllTasks={setAllTasks}
+      handleDelete={handleDelete}
+      handleDone={handleDone}
+       />
     </div>
   );
 }

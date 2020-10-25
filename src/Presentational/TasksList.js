@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function TasksList({allTasks, handleDelete}) {
+export default function TasksList({ allTasks, handleDelete, handleDone }) {
     return(
-        <ul>
-            {allTasks.map(({title, description, id}) => (
-                    <li key={id}>
-                        <div>
-                            <h2>{title}</h2>
+        <ul >
+            {allTasks.map(({title, description, id}, index) => (
+                    <li key={id} index={index} className='toDoTitle'>
+                        <div  >
+                            <h2 > {title } </h2>
+                            <button className='done-btn' onClick={()=>handleDone(index)}>Done</button>
                             <button onClick={() => handleDelete(id)}>X</button>
                         </div>
                         {!description ? null : <p>{description}</p>}
@@ -17,6 +18,15 @@ export default function TasksList({allTasks, handleDelete}) {
 
     );
 };
+
+
+// (index) => {
+//     const newTasks = [...allTasks];
+//     newTasks[index].isCompleted = true;
+//     setAllTasks(newTasks);
+//   }
+
+
 
 
 // <ul>

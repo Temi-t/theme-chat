@@ -14,8 +14,66 @@ h1{
 form{
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
 }
 input, textarea{
   padding: 1rem;
 }
+form button{
+  position: absolute;
+  /* background-color: rgb(23, 26, 23); */
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  height: 44%;
+}
+ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+li{
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(173, 171, 167);
+  border-radius: 8px 2px;
+  margin: 8px 0;
+}
+li div{
+  position: relative;
+}
+li div button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.1rem;
+  /* background-color: transparent; */
+  background-color: palevioletred;
+  border: 0;
+  /* padding: 0.5rem; */
+  font-weight: bolder;
+  cursor: pointer;
+  /* border-radius: 3px; */
+}
+
+li div button:hover,
+li div button:focus
+{
+  box-shadow: 0 0 1px black;
+}
+.done-btn{
+  background-color: palevioletred;
+  margin-right: 2rem;
+}
+li h2{
+  background-color: NavajoWhite;
+  /* margin: 0; */
+  /* padding: 4px; */
+}
+li p{
+  margin: 1rem;
+  background-color: red;
+}
+.done{
+  text-decoration: line-through;
+}
+
